@@ -21,6 +21,13 @@ At session start, create this todo list immediately:
 - [ ] Wait for user approval before implementing
 - [ ] Execute
 
+## VALIDATION
+
+- Do not run lint, type checks, build, tests, or code generation after making changes
+- If you would normally run one of these, stop and tell the user what to run and why — do not run it yourself
+- Only run such commands if the user explicitly says to
+- If the user reports a failure, fix it based on the output they provide
+
 ## RULES
 
 - Doc filenames must be self-describing (e.g., `auth.md`, `api-patterns.md`, `conventions.md`)
