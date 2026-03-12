@@ -18,6 +18,8 @@ At session start, create this todo list immediately:
 - [ ] Read only the docs relevant to this task (from either location)
 - [ ] Ask clarifying questions if anything is unclear
 - [ ] Propose a plan with todo items
+  - If the task touches >5 files or >10 steps, ask: "This looks large — should I save the plan to `.claude/plans/[slug].md` for future sessions?"
+  - If yes, write it there. If no, propose in chat only.
 - [ ] Wait for user approval before implementing
 - [ ] Execute
 
