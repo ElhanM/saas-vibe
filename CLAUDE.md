@@ -13,13 +13,13 @@
 
 At session start, create this todo list immediately:
 
-- Analyze the user's request
-- Run `find .claude/docs docs -name "*.md" | sort` to discover available docs
-- Read only the docs relevant to this task (from either location)
-- Ask clarifying questions if anything is unclear
-- Propose a plan with todo items
-- Wait for user approval before implementing
-- Execute
+- [ ] Analyze the user's request
+- [ ] Run `find .claude/docs docs -name "*.md" | sort` to discover available docs
+- [ ] Read only the docs relevant to this task (from either location)
+- [ ] Ask clarifying questions if anything is unclear
+- [ ] Propose a plan with todo items
+- [ ] Wait for user approval before implementing
+- [ ] Execute
 
 ## RULES
 
