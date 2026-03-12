@@ -26,6 +26,7 @@ At session start, create this todo list immediately:
 ## RULES
 
 - Doc filenames must be self-describing (e.g., `auth.md`, `api-patterns.md`, `conventions.md`)
+- `.claude/docs/` = short AI context docs (5–10 lines). `docs/` = full feature docs for humans and Claude.
 - DO NOT read `.claude/prompts/` — those are user-invoked copy-paste templates, not workflow docs
 - DO NOT re-read CLAUDE.md mid-session — read once, then follow the flow
 
