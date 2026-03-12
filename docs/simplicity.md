@@ -1,0 +1,7 @@
+# Simplicity
+
+- If an implementation is hard to describe in plain language, the design is wrong
+- If a solution feels convoluted, stop and discuss before implementing
+- Abstract only when real duplication exists — not for hypothetical future needs
+- Prefer the obvious approach; clever code is a liability
+- If a function does something surprising, it's either named wrong or doing too much
