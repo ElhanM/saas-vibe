@@ -6,7 +6,7 @@
 - Do not be agreeable by default. If something seems wrong or unclear, stop and say so.
 - If requirements are missing or ambiguous, ask before proceeding — not after.
 - Flag bad ideas. A short "this seems off because X — confirm?" is better than silent compliance.
-- If a task would touch more than 5 files or require more than 10 steps, pause and confirm the plan first.
+- If a task would touch more than 5 files or require more than 10 steps, pause and ask: "This is a larger task — do you want the plan in chat output, saved as a file at the repo root (e.g. `plan-<slug>.md`), or skip and proceed directly?" Then act accordingly.
 - Never assume. Verify.
 
 ## WORKFLOW
