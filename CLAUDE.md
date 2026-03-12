@@ -14,19 +14,17 @@
 At session start, create this todo list immediately:
 
 - [ ] Analyze the user's request
-- [ ] Run `find .claude/docs docs -name "*.md" | sort` to discover available docs
-- [ ] Read only the docs relevant to this task (from either location)
+- [ ] Run `find docs -name "*.md" | sort` to discover available docs
+- [ ] Read only the docs relevant to this task
 - [ ] Ask clarifying questions if anything is unclear
 - [ ] Propose a plan with todo items
-  - If the task touches >5 files or >10 steps, ask: "This looks large — should I save the plan to `.claude/plans/[slug].md` for future sessions?"
-  - If yes, write it there. If no, propose in chat only.
 - [ ] Wait for user approval before implementing
 - [ ] Execute
 
 ## RULES
 
 - Doc filenames must be self-describing (e.g., `auth.md`, `api-patterns.md`, `conventions.md`)
-- `.claude/docs/` = short AI context docs (5–10 lines). `docs/` = full feature docs for humans and Claude.
+- `docs/` = all project docs — both short context notes and full feature docs, readable by Claude and engineers
 - DO NOT read `.claude/prompts/` — those are user-invoked copy-paste templates, not workflow docs
 - DO NOT re-read CLAUDE.md mid-session — read once, then follow the flow
 
