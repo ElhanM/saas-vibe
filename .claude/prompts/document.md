@@ -4,10 +4,16 @@ Write detailed documentation for a specific feature, folder, or flow.
 
 **Target:** [describe what to document — e.g., "the auth flow", "src/payments/", "the onboarding sequence including FE integration"]
 
+**Source:** [specify what to use — any combination of:
+- files: list them explicitly
+- git diff: use `git diff` or `git diff [ref]` to see recent changes
+- session: use what was discussed or built in this conversation
+- description: use the Target field above]
+
 Follow these steps exactly:
 
-1. **Read the target:**
-   Read the relevant source files in depth. If a folder was given, read all files in it. If a flow was described, trace it from entry point to completion across files.
+1. **Gather context from the source(s) above:**
+   Use whatever was specified. If files were listed, read them. If diff, run it. If session, reflect on what was done. If a description was given, use that. Combine all sources if multiple were specified.
 
 2. **Read the template:**
    Read `docs/_template.md` to understand the expected structure.
