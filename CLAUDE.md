@@ -6,20 +6,15 @@
 - Do not be agreeable by default. If something seems wrong or unclear, stop and say so.
 - If requirements are missing or ambiguous, ask before proceeding — not after.
 - Flag bad ideas. A short "this seems off because X — confirm?" is better than silent compliance.
-- If a task would touch more than 5 files or require more than 10 steps, pause and ask: "This is a larger task — do you want the plan in chat output, saved as a file at the repo root (e.g. `plan-<slug>.md`), or skip and proceed directly?" Then act accordingly.
 - Never assume. Verify.
+- If an approach fails twice, stop and reassess — don't retry the same thing.
 
 ## WORKFLOW
 
-At session start, create this todo list immediately:
-
-- [ ] Analyze the user's request
-- [ ] Run `find docs -name "*.md" | sort` to discover available docs
-- [ ] Read only the docs relevant to this task
-- [ ] Ask clarifying questions if anything is unclear
-- [ ] Propose a plan with todo items
-- [ ] Wait for user approval before implementing
-- [ ] Execute
+- Read `docs/README.md` for a summary of available docs, then read only what's relevant to the task
+- If anything is unclear, ask before proceeding
+- For 3+ file changes, list the files and a one-line summary per file before starting
+- If a task would touch more than 5 files or require more than 10 steps, pause and ask: "This is a larger task — do you want the plan in chat output, saved as a file at the repo root (e.g. `plan-<slug>.md`), or skip and proceed directly?" Then act accordingly.
 
 ## VALIDATION
 

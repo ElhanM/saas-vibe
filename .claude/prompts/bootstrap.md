@@ -33,7 +33,10 @@ Document this codebase from scratch. Follow these steps exactly:
 
    Keep every doc to 5–10 lines max.
 
-7. **Report when done:**
+7. **Create `docs/README.md`:**
+   Add an entry for every doc created, using the format: `- \`filename.md\` — one-line description`.
+
+8. **Report when done:**
    List every file created with a one-sentence description of what it covers.
 
 **Doc format guidelines:**

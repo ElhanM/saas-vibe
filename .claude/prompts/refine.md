@@ -9,7 +9,7 @@ Reflect on this session and update the project docs. Follow these steps exactly:
    - What would be useful to remember next session?
 
 2. **Discover existing docs:**
-   Run `find docs -name "*.md" | sort` to see what already exists.
+   Read `docs/README.md` to see what already exists.
    Note: docs may be organized in subfolders (e.g., `api/`, `app/`, `infra/`) — this is intentional for monorepos.
 
 3. **Update or create docs:**
@@ -21,7 +21,10 @@ Reflect on this session and update the project docs. Follow these steps exactly:
    - Prefer updating an existing doc over creating a new one
    - If the project has distinct areas (e.g., api, app, infra), use subfolders to namespace docs
 
-4. **Report changes:**
+4. **Update `docs/README.md`:**
+   After creating or removing any doc, update `docs/README.md` to match — add new entries, remove stale ones. Keep the same format: `- \`filename.md\` — one-line description`.
+
+5. **Report changes:**
    List exactly what you created or updated, and one sentence explaining why each change was made.
 
 **Doc format guidelines:**
