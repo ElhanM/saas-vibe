@@ -1,5 +1,6 @@
 # Docs Index
 
+## conventions/
 - `abstractions.md` — when to abstract vs inline, interface design
 - `authorization.md` — authz patterns, access scoping
 - `code-comments.md` — comment guidelines (why, not what)
