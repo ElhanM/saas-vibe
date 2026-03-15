@@ -32,7 +32,10 @@ Document this codebase from scratch. Follow these steps exactly:
 7. **Update `docs/README.md`:**
    Add an entry for every doc created, grouped by subfolder, using the format: `- \`filename.md\` — one-line description`.
 
-8. **Report when done:**
+8. **Extract Claude memory:**
+   Check `~/.claude/projects/` for any memory files related to this project. If found, extract anything still relevant into `docs/memory/` (one file per topic, e.g. `docs/memory/auth-decisions.md`).
+
+9. **Report when done:**
    List every file created with a one-sentence description of what it covers.
 
 **Doc format guidelines:**
