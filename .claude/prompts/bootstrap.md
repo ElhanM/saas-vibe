@@ -4,7 +4,7 @@ Document this codebase from scratch. Follow these steps exactly:
 
 1. **Read the project manifest:**
    Look for and read whichever exists: `package.json`, `pyproject.toml`, `Cargo.toml`, `go.mod`, or equivalent.
-   For monorepos, read the root manifest and any per-package manifests (e.g., `apps/*/package.json`).
+   For monorepos, also read per-package manifests (e.g., `apps/*/package.json`).
 
 2. **Read the README** (if it exists).
 
@@ -18,17 +18,14 @@ Document this codebase from scratch. Follow these steps exactly:
    If the structure is unclear or ambiguous, ask one focused question before proceeding. Do not guess.
 
 6. **Create docs in `docs/`:**
-   Always organize docs into subfolders by area. Subfolders can contain subfolders if needed.
+   Group docs by logical area (e.g., `docs/auth/`, `docs/payments/`, `docs/data-pipeline/`). Subfolders can contain subfolders if needed. Groupings should reflect what the codebase does, not how the folders are named — folder paths change, docs shouldn't have to.
 
-   For each major area of the project, create a subfolder and add:
+   For each area, add:
    - `overview.md` — what it does, tech stack, key entry points
    - `architecture.md` — folder structure, key modules, data flow
-   - `conventions.md` — naming conventions, patterns, anti-patterns found in existing code
    - One additional doc per major feature area (e.g., `auth.md`, `payments.md`)
 
-   Examples:
-   - Monorepo: `docs/api/`, `docs/app/`, `docs/infra/`
-   - Single repo: `docs/server/`, `docs/ui/`, `docs/db/`
+   Cross-cutting docs (conventions, patterns, shared rules) go in `docs/conventions/`.
 
    Keep every doc to 5–10 lines max.
 

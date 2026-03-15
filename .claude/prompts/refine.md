@@ -15,7 +15,9 @@ Reflect on this session and update the project docs. Follow these steps exactly:
    For each meaningful insight from this session:
    - Find the right existing doc to update, OR
    - Create a new doc in the appropriate subfolder with a self-describing name
-   - Always use subfolders — never place docs at the `docs/` root (except `README.md`)
+   - Group docs by logical area, not folder path — groupings reflect what the code does, not how it's organized
+   - Cross-cutting docs (conventions, patterns, shared rules) go in `docs/conventions/`
+   - Never place docs at the `docs/` root (except `README.md`)
    - Subfolders can contain subfolders if needed
    - Keep each doc to 5–10 lines max
    - Write patterns and gotchas, not step-by-step details
