@@ -6,7 +6,7 @@ Reflect on this session and update the project docs. Follow these steps exactly:
    - What errors or failures occurred? How were they resolved?
    - What patterns or conventions were used or discovered?
    - What decisions were made and why?
-   - What would be useful to remember next session?
+   - What decisions, preferences, or gotchas should persist for future sessions?
 
 2. **Discover existing docs:**
    Read `docs/README.md` to see what already exists.

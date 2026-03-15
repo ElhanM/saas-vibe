@@ -21,8 +21,8 @@ At the end of your first session, paste `.claude/prompts/refine.md` to capture w
 ## Adopting an existing project
 
 1. Copy this repo structure into your project root.
-2. Paste `.claude/prompts/bootstrap.md` — Claude reads your codebase and creates project-specific docs in `docs/`. It also extracts any relevant Claude memory into `docs/memory/`.
-3. Review `docs/memory/` — edit or delete anything that's wrong or stale.
+2. Paste `.claude/prompts/bootstrap.md` — Claude reads your codebase and creates project-specific docs in `docs/`. It also extracts any relevant Claude memory into the appropriate `docs/` subfolder.
+3. Review the generated docs — edit or delete anything that's wrong or stale.
 4. From that point on, use `refine.md` at session end.
 
 ---
@@ -53,9 +53,9 @@ If memory grows unchecked, you're paying for stale context you don't need.
 
 1. Open `~/.claude/` in your editor. Check `projects/` — each project has a path-encoded subfolder with a `memory/` dir inside.
 2. Review and prune stale memory files.
-3. Prefer `docs/memory/` in your repo instead — version-controlled, reviewable, no hidden token cost.
-4. When bootstrapping, `bootstrap.md` will extract relevant Claude memory into `docs/memory/` for you. Review and edit after.
+3. Prefer `docs/` in your repo instead — version-controlled, reviewable, no hidden token cost.
+4. When bootstrapping, `bootstrap.md` extracts relevant Claude memory into `docs/` for you. Review and edit after.
 
 **Clear all Claude memory:** `rm -rf ~/.claude/projects/*/memory/`
 
-**TL;DR:** `~/.claude/projects/` memory = hidden token cost. Keep it lean or use `docs/memory/` in git instead.
+**TL;DR:** `~/.claude/projects/` memory = hidden token cost. Keep it lean or use `docs/` in git instead.

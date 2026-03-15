@@ -26,12 +26,8 @@
 ## MEMORY
 
 - Do not rely on internal/implicit memory between sessions. Treat each conversation as a fresh start.
-- All persistent context must live in the repo — either in `docs/` or `docs/memory/` (for session learnings, decisions, preferences).
-- Before starting work, check `docs/memory/` for relevant context from past sessions.
-- When you learn something worth remembering (decisions, preferences, gotchas, architectural choices), save it to `docs/memory/<topic>.md`.
-- Memory files follow the same naming rule: self-describing filenames (e.g., `docs/memory/auth-decisions.md`, `docs/memory/user-prefs.md`).
+- All persistent context lives in `docs/` — check `docs/README.md` for what exists.
 - Never assume you "remember" something — if it's not in the repo, you don't know it.
-- The user may edit memory files directly. Always treat the file content as the source of truth.
 
 ## RULES
 
