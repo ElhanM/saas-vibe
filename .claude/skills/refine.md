@@ -1,4 +1,7 @@
-# Session Refinement Prompt
+---
+description: Reflect on the current session and update project docs with new patterns, decisions, and gotchas
+disable-model-invocation: true
+---
 
 Reflect on this session and update the project docs. Follow these steps exactly:
 

@@ -1,4 +1,7 @@
-# Bootstrap Prompt
+---
+description: Document a codebase from scratch by reading its structure and creating docs/ files
+disable-model-invocation: true
+---
 
 Document this codebase from scratch. Follow these steps exactly:
 
