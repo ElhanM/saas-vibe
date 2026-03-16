@@ -75,6 +75,7 @@ Code → session end → /refine → Claude updates docs/ → commit
 └── prompts/    → copy-paste templates (Claude never reads these)
 CLAUDE.md       → rules + behavior for every session
 docs/           → persistent project memory (grows via /refine)
+plans/          → ephemeral plan files (gitignored, create/delete freely)
 ```
 
 ---

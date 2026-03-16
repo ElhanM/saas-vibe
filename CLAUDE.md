@@ -14,7 +14,7 @@
 - Read `docs/README.md` for a summary of available docs, then read only what's relevant to the task
 - If anything is unclear, ask before proceeding
 - For 3+ file changes, list the files and a one-line summary per file before starting
-- If a task would touch more than 5 files or require more than 10 steps, pause and ask: "This is a larger task — do you want the plan in chat output, saved as a file at the repo root (e.g. `plan-<slug>.md`), or skip and proceed directly?" Then act accordingly.
+- If a task would touch more than 5 files or require more than 10 steps, pause and ask: "This is a larger task — do you want the plan in chat output, saved as a file (e.g. `plans/<slug>.md`), or skip and proceed directly?" Then act accordingly.
 
 ## VALIDATION
 
