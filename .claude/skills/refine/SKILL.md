@@ -1,4 +1,5 @@
 ---
+name: refine
 description: Reflect on the current session and update project docs with new patterns, decisions, and gotchas
 disable-model-invocation: true
 ---
