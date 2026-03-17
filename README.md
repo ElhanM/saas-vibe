@@ -93,6 +93,4 @@ If memory grows unchecked, you're paying for stale context you don't need.
 3. Prefer `docs/` in your repo instead — version-controlled, reviewable, no hidden token cost.
 4. When bootstrapping, `/bootstrap` extracts relevant Claude memory into `docs/` for you. Review and edit after.
 
-**Clear all Claude memory:** `rm -rf ~/.claude/projects/*/memory/`
-
-**TL;DR:** `~/.claude/projects/` memory = hidden token cost. Keep it lean or use `docs/` in git instead.
+**TL;DR:** `~/.claude/projects/` memory = hidden token cost. Keep it lean and use `docs/` in git instead.
