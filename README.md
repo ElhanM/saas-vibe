@@ -32,7 +32,11 @@ At the end of your first session, run `/refine` to capture what was learned. Com
 ## The core loop
 
 ```
-Code → session end → /refine → Claude updates docs/ → commit
+Code → session end → /refine → commit
+
+If task spans multiple sessions, also run update-plan before /refine:
+Code → session end → update-plan → /refine → commit
+Next session: read plan → continue from checkpoint → repeat
 ```
 
 ---
@@ -49,6 +53,7 @@ Code → session end → /refine → Claude updates docs/ → commit
 | Prompt | When to use |
 |---|---|
 | `factory.md` | Anytime — fill in the template, then paste it to capture a reusable pattern as a prompt |
+| `update-plan.md` | End of a multi-session task — fill in the plan path, paste it to mark progress and update the checkpoint |
 
 ---
 
