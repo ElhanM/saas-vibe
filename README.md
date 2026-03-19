@@ -34,8 +34,8 @@ At the end of your first session, run `/refine` to capture what was learned. Com
 ```
 Code → session end → /refine → commit
 
-If task spans multiple sessions, also run update-plan before /refine:
-Code → session end → update-plan → /refine → commit
+If task spans multiple sessions, also run /update-plan before /refine:
+Code → session end → /update-plan plans/<slug>.md → /refine → commit
 Next session: read plan → continue from checkpoint → repeat
 ```
 
@@ -47,13 +47,13 @@ Next session: read plan → continue from checkpoint → repeat
 |---|---|
 | `/refine` | End of every session — captures patterns and fixes |
 | `/bootstrap` | Once — documents an existing codebase from scratch |
+| `/update-plan plans/<slug>.md` | End of a multi-session task — marks progress and updates the checkpoint |
 
 ## Prompts
 
 | Prompt | When to use |
 |---|---|
 | `factory.md` | Anytime — fill in the template, then paste it to capture a reusable pattern as a prompt |
-| `update-plan.md` | End of a multi-session task — fill in the plan path, paste it to mark progress and update the checkpoint |
 
 ---
 

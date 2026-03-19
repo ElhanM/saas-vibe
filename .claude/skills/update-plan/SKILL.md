@@ -1,6 +1,10 @@
-# Update Plan
+---
+name: update-plan
+description: Update a plan file based on the current session — pass the plan path as an argument (e.g. /update-plan plans/auth-refactor.md)
+disable-model-invocation: true
+---
 
-**Plan:** [path to the plan file, e.g. `plans/auth-refactor.md`]
+**Plan:** $ARGUMENTS
 
 Follow these steps exactly:
 
