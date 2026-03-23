@@ -39,3 +39,4 @@
 - Doc filenames must be self-describing (e.g., `auth.md`, `api-patterns.md`, `conventions.md`)
 - `docs/` = all project docs — both short context notes and full feature docs, readable by Claude and engineers
 - DO NOT re-read CLAUDE.md mid-session — read once, then follow the flow
+- Do NOT read `.claude/prompts/` unless explicitly asked to (e.g., "fix this prompt" or "add a prompt file")
