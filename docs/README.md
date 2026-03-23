@@ -1,5 +1,8 @@
 # Docs Index
 
+## root
+- `plans.md` — plan file format and session behavior
+
 ## conventions/
 - `abstractions.md` — when to abstract vs inline, interface design
 - `authorization.md` — authz patterns, access scoping

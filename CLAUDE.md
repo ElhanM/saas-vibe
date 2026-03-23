@@ -15,7 +15,7 @@
 - If anything is unclear, ask before proceeding
 - For 3+ file changes, list the files and a one-line summary per file before starting
 - If a task would touch more than 5 files or require more than 10 steps, pause and ask: "This is a larger task — do you want the plan in chat output, saved as a file (e.g. `plans/<slug>.md`), or skip and proceed directly?" Then act accordingly.
-- **Edit files sequentially, never in parallel.** Wait for each edit to be confirmed before proceeding to the next. If an edit is rejected, fix it before touching any other file.
+- **Do all tool calls sequentially, never in parallel.** One tool call per response — read, edit, bash, search, whatever. Wait for confirmation before the next. If a tool call is rejected or corrected, address that before moving on. Do not batch reads, edits, or any other operations.
 
 ## VALIDATION
 
@@ -26,30 +26,7 @@
 
 ## PLANS
 
-- Plans live in `plans/<slug>.md`. Use this format exactly:
-
-  ```
-  # Plan: <title>
-  Status: in-progress | complete
-  Last updated: <date>
-
-  ## Goal
-  <what we're building or fixing>
-
-  ## Decisions
-  <key decisions made and why — update as you go>
-
-  ## Steps
-  - [x] Step 1 — brief note on what was done
-  - [ ] **← NEXT** Step 2
-  - [ ] Step 3
-
-  ## Checkpoint
-  <free-form: where we stopped, current state of things, gotchas, what to watch out for>
-  ```
-
-- At session start, if a plan file is provided or referenced: read it, orient to the `← NEXT` marker and `## Checkpoint`, then proceed
-- Keep only one `← NEXT` marker — on the next step to do
+- See `docs/plans.md` for format and session behavior.
 
 ## MEMORY
 
