@@ -2,9 +2,6 @@
   "permissions": {
     "deny": [
       "Read(**/.env)"
-    ],
-    "allow": [
-      "Read(**/.env.example)"
     ]
   }
 }
