@@ -1,11 +1,12 @@
 # Code Comments
 
-- Comments explain why, not what — the code already says what it does
+- Comments explain what can't be derived from reading the code — intent, constraints, edge cases. Not what the code obviously does, nor why it changed from a prior version.
 - Keep comments tight and purposeful — don't restate the plan or narrate what the code is about to do
 - If removing a comment loses no information, remove it
 - Comment non-obvious decisions, edge cases, constraints, and tradeoffs
 - Never comment what the function or method name already says
 - Never reference implementation details from the conversation that produced the code — comments are for future readers, not a session transcript
+- Never write "changed X to Y because Z" — that assumes knowledge of prior state no future reader will have
 
 ## Inline vs. External Docs
 
