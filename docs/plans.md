@@ -29,3 +29,4 @@ Last updated: <date>
 - Keep only one `← NEXT` marker — on the next step to do
 - Work **one step at a time**: complete the step, mark it `[x]`, move `← NEXT` to the next step, update `## Checkpoint`, then **stop and wait for the user to say to continue** — do not proceed to the next step automatically
 - Use `/update-plan plans/<slug>.md` at the end of a session to update the plan file
+- If something new comes up during implementation (extra file touched, design decision changed, step added or removed), update the plan immediately to reflect it — the plan must match reality, not just original intent, so future sessions aren't misled
