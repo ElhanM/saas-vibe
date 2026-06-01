@@ -21,15 +21,15 @@ Document this codebase from scratch. Follow these steps exactly:
 5. **Ask before writing:**
    If the structure is unclear or ambiguous, ask one focused question before proceeding. Do not guess.
 
-6. **Create docs in `docs/`:**
-   Group docs by logical area (e.g., `docs/auth/`, `docs/payments/`, `docs/data-pipeline/`). Subfolders can contain subfolders if needed. Groupings should reflect what the codebase does, not how the folders are named — folder paths change, docs shouldn't have to.
+6. **Create docs in `docs/` — capture only what can't be derived from reading the code:**
+   Group docs by logical area (e.g., `docs/auth/`, `docs/payments/`). Subfolders can contain subfolders if needed. Groupings should reflect what the codebase does, not how the folders are named — folder paths change, docs shouldn't have to.
 
-   For each area, add:
-   - `overview.md` — what it does, tech stack, key entry points
-   - `architecture.md` — folder structure, key modules, data flow
-   - One additional doc per major feature area (e.g., `auth.md`, `payments.md`)
+   Document:
+   - Conventions and patterns actually in use (naming, error handling, auth, etc.) → `docs/conventions/`
+   - Non-obvious gotchas, constraints, and the *why* behind notable decisions
+   - If orientation is unavoidable, describe by durable role (e.g. "auth runs in the request middleware layer"), never by file path or name — paths and filenames drift too
 
-   Cross-cutting docs (conventions, patterns, shared rules) go in `docs/conventions/`.
+   Do NOT write `overview.md` / `architecture.md` or any doc that snapshots structure, stack, or data flow — that is descriptive state that drifts and is already in the code. Never document business logic; if it lives in the code, leave it there.
 
    Keep every doc to 5–10 lines max.
 
