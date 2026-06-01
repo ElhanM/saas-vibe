@@ -38,5 +38,6 @@
 
 - Doc filenames must be self-describing (e.g., `auth.md`, `api-patterns.md`, `conventions.md`)
 - `docs/` = all project docs — both short context notes and full feature docs, readable by Claude and engineers
+- `docs/` holds prescriptive conventions and patterns (rules to follow), not descriptive state (claims about current code that go stale). The *why*, not a snapshot of the *what*. Never put source/business logic in `docs/`
 - DO NOT re-read CLAUDE.md mid-session — read once, then follow the flow
 - Do NOT read `.claude/prompts/` unless explicitly asked to (e.g., "fix this prompt" or "add a prompt file")

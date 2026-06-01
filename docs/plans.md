@@ -27,6 +27,5 @@ Last updated: <date>
 
 - At session start, if a plan file is provided or referenced: read it, orient to the `← NEXT` marker and `## Checkpoint`, then proceed
 - Keep only one `← NEXT` marker — on the next step to do
-- Work **one step at a time**: complete the step, mark it `[x]`, move `← NEXT` to the next step, update `## Checkpoint`, then **stop and wait for the user to say to continue** — do not proceed to the next step automatically
-- Use `/update-plan plans/<slug>.md` at the end of a session to update the plan file
+- Work **one step at a time**: complete the step, mark it `[x]`, move `← NEXT` to the next step, update `## Checkpoint`, then proceed to the next step — keep going until all steps are done or the user intervenes
 - If something new comes up during implementation (extra file touched, design decision changed, step added or removed), update the plan immediately to reflect it — the plan must match reality, not just original intent, so future sessions aren't misled
