@@ -13,16 +13,14 @@
 
 - Read `docs/README.md` for a summary of available docs, then read only what's relevant to the task
 - If anything is unclear, ask before proceeding
-- For 3+ file changes, list the files and a one-line summary per file before starting
-- If a task would touch more than 5 files or require more than 10 steps, pause and ask: "This is a larger task — do you want the plan in chat output, saved as a file (e.g. `plans/<slug>.md`), or skip and proceed directly?" Then act accordingly.
-- **Do all tool calls sequentially, never in parallel.** One tool call per response — read, edit, bash, search, whatever. Wait for confirmation before the next. If a tool call is rejected or corrected, address that before moving on. Do not batch reads, edits, or any other operations.
+- Before a multi-file change, surface a plan — list the files with a one-line summary each — and ask: "Do you want this plan in chat output, saved as a file (e.g. `plans/<slug>.md`), or skip and proceed directly?" Then act accordingly.
+- **Batch independent reads/searches in parallel** — calls with no dependency between them should go out together in one response. Only serialize when one call depends on another's output.
+- **But edit files one at a time, sequentially — never batched.** Issue the next edit only after the previous one resolves. If I reject an early edit in a batch, every edit after it is built on rejected state and has to be thrown out too — wasted work.
 
 ## VALIDATION
 
-- Do not run lint, type checks, build, tests, or code generation after making changes
-- If you would normally run one of these, stop and tell the user what to run and why — do not run it yourself
-- Only run such commands if the user explicitly says to
-- If the user reports a failure, fix it based on the output they provide
+- After making changes, run the relevant validation (lint, type checks, build, tests, code generation). Read failures, fix them, and iterate until green, then report results.
+- Pause and ask first before running anything slow, expensive, destructive, or outward-facing (deploys, migrations, mass deletes).
 
 ## PLANS
 

@@ -85,15 +85,15 @@ plans/          → ephemeral plan files (gitignored, create/delete freely)
 
 ## Claude Code memory — keep it lean
 
-Claude Code has a built-in memory system at `~/.claude/projects/`. Files there are loaded into context on **every conversation start**, which means they **burn tokens on every session**.
+Claude Code has a built-in memory system at `~/.claude/projects/`. Files there are loaded into context on **every conversation start**.
 
-If memory grows unchecked, you're paying for stale context you don't need.
+If memory grows unchecked, it bloats the context window with stale, low-signal detail — and a cluttered context degrades output quality. Lean memory keeps Claude focused on what matters.
 
 **What to do:**
 
 1. Open `~/.claude/` in your editor. Check `projects/` — each project has a path-encoded subfolder with a `memory/` dir inside.
 2. Review and prune stale memory files.
-3. Prefer `docs/` in your repo instead — version-controlled, reviewable, no hidden token cost.
+3. Prefer `docs/` in your repo instead — version-controlled, reviewable, and kept tight on purpose.
 4. When bootstrapping, `/bootstrap` extracts relevant Claude memory into `docs/` for you. Review and edit after.
 
-**TL;DR:** `~/.claude/projects/` memory = hidden token cost. Keep it lean and use `docs/` in git instead.
+**TL;DR:** bloated `~/.claude/projects/` memory = noisier context = worse output. Keep it lean and use `docs/` in git instead.
